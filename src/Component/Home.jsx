@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 import Footer from "./Footer";
+import img from "../images/gradient.png"
+
 function Home() {
   const [Name, setName]=useState('');
 
@@ -36,10 +38,10 @@ function Home() {
           </button>
       </div>
       <div className="images">
-        <img src="../assets/gradient.png" alt="" />
+        <img src={img} alt="" />
       </div>
       <div className="images2">
-        <img src="../assets/gradient.png" alt="" />
+        <img src={img} alt="" />
       </div>
       <Footer />
     </>

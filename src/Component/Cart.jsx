@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../App.css";
 import Footer from "./Footer";
 import Swal from "sweetalert2";
+import img from "../images/gradient.png"
 
 export default function Cart() {
   const [showModal, setShowModal] = useState(false);
@@ -418,7 +419,7 @@ export default function Cart() {
 
       <div classNameName="side-images-2">
         <img
-          src="../assets/gradient.png"
+          src={img}
           className="s-img-in-01 opacity-65"
           alt=""
         />

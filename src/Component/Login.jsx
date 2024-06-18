@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css';
+import img from "../images/png.png"
 
 function Login() {
   const [Email, setEmail] = useState("");
@@ -87,7 +88,7 @@ function Login() {
             <div className="flex justify-center m-2">
               <img
                 className="w-1/3 h-4/6"
-                src="../assets/png.png"
+                src={img}
                 alt="img not found"
               />
               <div className="flex justify-center m-2 flex-col">

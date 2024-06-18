@@ -3,6 +3,7 @@ import "../App.css";
 import Footer from "./Footer";
 import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css';
+import img from "../images/innovation.png"
 
 export default function Create() {
 
@@ -156,7 +157,7 @@ export default function Create() {
         </div>
 
         <div className="image-innovation opacity-75">
-          <img className="" src="../assets/innovation.png" alt="" />
+          <img className="" src={img} alt="" />
           {/* <img src="..../assets/innovation2.png" alt="" /> */}
         </div>
       </div>

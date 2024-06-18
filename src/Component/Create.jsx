@@ -156,8 +156,8 @@ export default function Create() {
         </div>
 
         <div className="image-innovation opacity-75">
-          <img className="" src="../public/innovation.png" alt="" />
-          {/* <img src="../public/innovation2.png" alt="" /> */}
+          <img className="" src="../assets/innovation.png" alt="" />
+          {/* <img src="..../assets/innovation2.png" alt="" /> */}
         </div>
       </div>
       <Footer />

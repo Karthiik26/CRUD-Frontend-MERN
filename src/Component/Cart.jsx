@@ -418,7 +418,7 @@ export default function Cart() {
 
       <div classNameName="side-images-2">
         <img
-          src="/public/gradient.png"
+          src="../assets/gradient.png"
           className="s-img-in-01 opacity-65"
           alt=""
         />

@@ -36,10 +36,10 @@ function Home() {
           </button>
       </div>
       <div className="images">
-        <img src="../public/gradient.png" alt="" />
+        <img src="../assets/gradient.png" alt="" />
       </div>
       <div className="images2">
-        <img src="../public/gradient.png" alt="" />
+        <img src="../assets/gradient.png" alt="" />
       </div>
       <Footer />
     </>

@@ -87,7 +87,7 @@ function Login() {
             <div className="flex justify-center m-2">
               <img
                 className="w-1/3 h-4/6"
-                src="/public/png.png"
+                src="../assets/png.png"
                 alt="img not found"
               />
               <div className="flex justify-center m-2 flex-col">

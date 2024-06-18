@@ -18,6 +18,8 @@ function Home() {
     }
   }
 
+
+
   return (
     <>
       <div className="container flex justify-center m-auto">
@@ -32,11 +34,11 @@ function Home() {
           <h4 className="text-[16px] p-2 text-center font-semibold font-serif" >YOU CAN ACCESS IT AT ANY WHERE IN THE WORLD JUST USING INTERNET</h4>
         </div>
       </div>
-      <div className="flex justify-center relative top-5">
-          <button className="px-4 py-2 m-4 bg-blue-500 text-white font-bold font-sans text-[18px] rounded">
+      {/* <div className="flex justify-center relative top-5">
+          <button  className="px-4 py-2 m-4 bg-blue-500 text-white font-bold font-sans text-[18px] rounded">
             Explore Your Data
           </button>
-      </div>
+      </div> */}
       <div className="images">
         <img src={img} alt="" />
       </div>

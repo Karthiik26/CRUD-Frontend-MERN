@@ -580,7 +580,7 @@ const ProductCard = ({ item, convertToBase64 }) => {
     return (
         <div>
             <h2>{item.name}</h2>
-            {imageSrc ? <img src={imageSrc} className="w-20 h-20" alt={item.name} /> : <p>Loading image...</p>}
+            {imageSrc ? <img src={imageSrc} className="w-22 h-20" alt={item.name} /> : <p>Loading image...</p>}
         </div>
     );
 };

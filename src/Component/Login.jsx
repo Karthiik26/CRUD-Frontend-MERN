@@ -13,7 +13,7 @@ function Login() {
   async function LoggedIn(event) {
     try{ event.preventDefault();
       let result = await fetch(
-        `http://localhost:4500/login/${Email}/${Password}`,
+        `https://crud-mern-backend-66eu.onrender.com/login/${Email}/${Password}`,
         {
           method: "POST",
           headers: {

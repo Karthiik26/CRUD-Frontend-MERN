@@ -25,7 +25,7 @@ export default function Cart() {
 
   async function GetArrayProductList() {
     try {
-      let result = await fetch(`http://localhost:4500/GetMyData/${UserId}`, {
+      let result = await fetch(`https://crud-mern-backend-66eu.onrender.com/GetMyData/${UserId}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ export default function Cart() {
     console.log("Showing details for:", item);
     try {
       let resp = await fetch(
-        `http://localhost:4500/GettingInnerData/${UserId}/${item}`,
+        `https://crud-mern-backend-66eu.onrender.com/GettingInnerData/${UserId}/${item}`,
         {
           method: "GET",
           headers: {
@@ -130,7 +130,7 @@ export default function Cart() {
   const EditBtnCall = async (item) => {
     try {
       let resp = await fetch(
-        `http://localhost:4500/GettingInnerData/${UserId}/${item}`,
+        `https://crud-mern-backend-66eu.onrender.com/GettingInnerData/${UserId}/${item}`,
         {
           method: "GET",
           headers: {
@@ -184,7 +184,7 @@ export default function Cart() {
     console.log("Deleting item:", item);
     try {
       const resp = await fetch(
-        `http://localhost:4500/deleteProductItem/${UserId}/${item}`,
+        `https://crud-mern-backend-66eu.onrender.com/deleteProductItem/${UserId}/${item}`,
         {
           method: "DELETE",
         }
@@ -236,7 +236,7 @@ export default function Cart() {
       formData.append("ProductImage", ShowImage);
 
       const resp = await fetch(
-        `http://localhost:4500/UpdateProduct/${UserId}/${ShowId}`,
+        `https://crud-mern-backend-66eu.onrender.com/UpdateProduct/${UserId}/${ShowId}`,
         {
           method: "PUT",
           body: formData,

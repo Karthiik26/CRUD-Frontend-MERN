@@ -36,7 +36,7 @@ export default function Create() {
       console.log("formData: ", formData);
 
       const resp = await fetch(
-        `http://localhost:4500/ProductInserting/${UserId}`,
+        `https://crud-mern-backend-66eu.onrender.com/ProductInserting/${UserId}`,
         {
           method: "POST",
           body: formData,

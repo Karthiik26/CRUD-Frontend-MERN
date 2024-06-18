@@ -56,7 +56,7 @@ export default function Profile() {
 
       try {
         const resp = await fetch(
-          `http://localhost:4500/GettingUser/${dataId}`,
+          `https://crud-mern-backend-66eu.onrender.com/GettingUser/${dataId}`,
           {
             method: "GET",
             headers: {
@@ -125,7 +125,7 @@ export default function Profile() {
       formData.append("Country", Country);
       formData.append("UserImage", Image);
 
-      const resp = await fetch(`http://localhost:4500/UpdateUser/${UserId}`, {
+      const resp = await fetch(`https://crud-mern-backend-66eu.onrender.com/UpdateUser/${UserId}`, {
         method: "PUT",
         body: formData,
       });
@@ -175,7 +175,7 @@ export default function Profile() {
     const data = {};
     try {
       let Resp = await fetch(
-        `http://localhost:4500/changePswrd/${UserId}/${Password}/${NewPassword}`,
+        `https://crud-mern-backend-66eu.onrender.com/changePswrd/${UserId}/${Password}/${NewPassword}`,
         {
           method: "PUT",
           headers: {

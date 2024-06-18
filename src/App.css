@@ -1,0 +1,125 @@
+a.home.active {
+    background-color: pink;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+a.logout:hover {
+    background-color: pink;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+a.nav1.active {
+    background-color: rgb(8, 163, 8);
+    color: whitesmoke;
+}
+
+input::file-selector-button {
+    width: 50%;
+    margin: 5px;
+    background: white;
+}
+
+.images {
+    position: absolute;
+    top: 10px;
+    right: 450px;
+    z-index: -1;
+    zoom: 180%;
+}
+
+.images2 {
+    position: absolute;
+    top: 300px;
+    right: 120px;
+    z-index: -1;
+    zoom: 90%;
+}
+
+.image-innovation {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    z-index: -1;
+    zoom: 34%;
+}
+
+.label1 {
+    position: relative;
+    top: 6px;
+}
+
+.label2 {
+    position: relative;
+    top: -8px;
+}
+
+.profile {
+    overflow: hidden;
+}
+
+.inside-profile {
+    zoom: 140%;
+    position: relative;
+    top: -20px;
+}
+
+.s-img-in-01 {
+    position: absolute;
+    top: -60px;
+    left: -100px;
+    z-index: -1;
+}
+
+.footer {
+    width: -webkit-fill-available;
+}
+
+.img-preview-profile {
+    overflow: hidden;
+}
+
+.label-area {
+    height: 260px;
+}
+
+.show-image {
+    width: 30px;
+    height: 30px; 
+    background-color: white;
+    mask-image: url('Eye.png');
+    -webkit-mask-image: url('Eye.png');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.delete-image {
+    width: 30px;
+    height: 30px; 
+    background-color: white;
+    mask-image: url('Delete.png');
+    -webkit-mask-image: url('Delete.png');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.edit-image {
+    width: 30px;
+    height: 30px; 
+    background-color: white;
+    mask-image: url('edit.png');
+    -webkit-mask-image: url('edit.png');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}

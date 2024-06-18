@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css';
+import img from "../images/Uploadpana.png"
 
 function Signup() {
   const nav = useNavigate();
@@ -127,7 +128,7 @@ function Signup() {
           </div>
           <form className="w-92" onSubmit={SignUp}>
             <div className="flex justify-center align-middle m-0">
-              <img className="w-2/5" src="/src/assets/Uploadpana.png" alt="" />
+              <img className="w-2/5" src={img} alt="" />
               <div className="flex justify-center m-auto flex-col">
                 <div className="flex justify-between m-auto flex-row">
                   <span className="flex justify-start m-auto flex-col">

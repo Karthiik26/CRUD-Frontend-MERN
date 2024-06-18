@@ -32,7 +32,7 @@ export default function NavBar() {
             <h5 className="px-6 m-1 text-[16px] font-medium">Karthik Nagula</h5>
           </div> */}
           <div className="flex justify-between">
-            <div className="mx-4 py-2 my-1 text-[24px]">Navbar</div>
+            <div className="mx-4 py-2 my-1 text-[24px] font-bold">WEB OPERATIONS</div>
             <div className="py-4 mx-2">
               <NavLink className="px-4 py-2 text-[18px] home" to={"/"}>
                 Home

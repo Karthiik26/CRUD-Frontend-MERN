@@ -90,8 +90,9 @@ input::file-selector-button {
     width: 30px;
     height: 30px; 
     background-color: white;
-    mask-image: url('Eye.png');
-    -webkit-mask-image: url('Eye.png');
+    z-index: 111;
+    mask-image: url('./images/Eye.png');
+    -webkit-mask-image: url('./images/Eye.png');
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-repeat: no-repeat;
@@ -103,8 +104,8 @@ input::file-selector-button {
     width: 30px;
     height: 30px; 
     background-color: white;
-    mask-image: url('Delete.png');
-    -webkit-mask-image: url('Delete.png');
+    mask-image: url('./images/Delete.png');
+    -webkit-mask-image: url('./images/Delete.png');
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-repeat: no-repeat;
@@ -116,8 +117,8 @@ input::file-selector-button {
     width: 30px;
     height: 30px; 
     background-color: white;
-    mask-image: url('edit.png');
-    -webkit-mask-image: url('edit.png');
+    mask-image: url('./images/edit.png');
+    -webkit-mask-image: url('./images/edit.png');
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-repeat: no-repeat;

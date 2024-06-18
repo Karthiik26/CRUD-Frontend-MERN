@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import img from '../images/gradient.png'
 import Delete from '../images/Delete.png'
 import Eye from '../images/Eye.png'
-import Edit from '../images/Edit.png'
+import Edit from '../images/edit.png'
 
 export default function Cart() {
   const [showModal, setShowModal] = useState(false);
@@ -395,7 +395,6 @@ export default function Cart() {
                       className="font-sans font-bold text-[15px] px-4 py-2 bg-blue-500 rounded text-white hover:bg-blue-600"
                     >
                       <div className="show-image">
-                        <img src={Eye} alt="" />
                       </div>
                     </button>
                   </td>
@@ -405,7 +404,6 @@ export default function Cart() {
                       className=" font-sans font-bold text-[15px] px-4 py-2 bg-green-500 rounded text-white hover:bg-green-600"
                     >
                       <div className="edit-image">
-                        <img src={Edit} alt="" />
                       </div>
                     </button>
                   </td>
@@ -415,7 +413,6 @@ export default function Cart() {
                       className=" font-sans font-bold text-[15px] px-4 py-2 bg-red-500 rounded text-white hover:bg-red-600"
                     >
                       <div className="delete-image">
-                        <img src={Delete} alt="" />
                       </div>
                     </button>
                   </td>

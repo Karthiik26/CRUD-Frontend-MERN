@@ -3,7 +3,8 @@ import "../App.css";
 import Footer from "./Footer";
 import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css';
-import img from "../images/innovation.png"
+// import img from "../images/innovation.png"
+import img  from "../images/gradient.png";
 
 export default function Create() {
 

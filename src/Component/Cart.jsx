@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../App.css";
 import Footer from "./Footer";
 import Swal from "sweetalert2";
-import img from "../images/gradient.png"
+import img from '../images/gradient.png'
 
 export default function Cart() {
   const [showModal, setShowModal] = useState(false);

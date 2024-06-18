@@ -127,7 +127,7 @@ function Signup() {
           </div>
           <form className="w-92" onSubmit={SignUp}>
             <div className="flex justify-center align-middle m-0">
-              <img className="w-2/5" src="./assets/Uploadpana.png" alt="" />
+              <img className="w-2/5" src="/src/assets/Uploadpana.png" alt="" />
               <div className="flex justify-center m-auto flex-col">
                 <div className="flex justify-between m-auto flex-row">
                   <span className="flex justify-start m-auto flex-col">

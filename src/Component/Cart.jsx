@@ -3,6 +3,9 @@ import "../App.css";
 import Footer from "./Footer";
 import Swal from "sweetalert2";
 import img from '../images/gradient.png'
+import Delete from '../images/Delete.png'
+import Eye from '../images/Eye.png'
+import Edit from '../images/Edit.png'
 
 export default function Cart() {
   const [showModal, setShowModal] = useState(false);
@@ -391,7 +394,9 @@ export default function Cart() {
                       onClick={() => ShowDetailData(item._id)}
                       className="font-sans font-bold text-[15px] px-4 py-2 bg-blue-500 rounded text-white hover:bg-blue-600"
                     >
-                      <div className="show-image"></div>
+                      <div className="show-image">
+                        <img src={Eye} alt="" />
+                      </div>
                     </button>
                   </td>
                   <td className="px-4 py-2 text-[16px]">
@@ -399,7 +404,9 @@ export default function Cart() {
                       onClick={() => EditBtnCall(item._id)}
                       className=" font-sans font-bold text-[15px] px-4 py-2 bg-green-500 rounded text-white hover:bg-green-600"
                     >
-                      <div className="edit-image"></div>
+                      <div className="edit-image">
+                        <img src={Edit} alt="" />
+                      </div>
                     </button>
                   </td>
                   <td className="px-4 py-2 text-[16px]">
@@ -407,7 +414,9 @@ export default function Cart() {
                       onClick={() => DeleteSwalFuc(item._id)}
                       className=" font-sans font-bold text-[15px] px-4 py-2 bg-red-500 rounded text-white hover:bg-red-600"
                     >
-                      <div className="delete-image"></div>
+                      <div className="delete-image">
+                        <img src={Delete} alt="" />
+                      </div>
                     </button>
                   </td>
                 </tr>

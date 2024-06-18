@@ -3,8 +3,7 @@ import "../App.css";
 import Footer from "./Footer";
 import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css';
-// import img from "../images/innovation.png"
-import img  from "../images/gradient.png";
+import img from "../images/Innovation.png";
 
 export default function Create() {
 
@@ -145,7 +144,7 @@ export default function Create() {
             </div>
             <span
               className="flex justify-center align-middle flex-row"
-              style={{ marginLeft: "-50px" }}
+              style={{ marginLeft: "-220px" }}
             >
               <button
                 type="submit"
@@ -158,8 +157,8 @@ export default function Create() {
         </div>
 
         <div className="image-innovation opacity-75">
-          <img className="" src={img} alt="" />
-          {/* <img src="..../assets/innovation2.png" alt="" /> */}
+          {/* <img className="" src={img} alt="" /> */}
+          <img src={img} alt="" />
         </div>
       </div>
       <Footer />

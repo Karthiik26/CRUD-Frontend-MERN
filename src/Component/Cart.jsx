@@ -3,9 +3,7 @@ import "../App.css";
 import Footer from "./Footer";
 import Swal from "sweetalert2";
 import img from '../images/gradient.png'
-import Delete from '../images/Delete.png'
-import Eye from '../images/Eye.png'
-import Edit from '../images/edit.png'
+import moment from "moment";
 
 export default function Cart() {
   const [showModal, setShowModal] = useState(false);
@@ -331,6 +329,10 @@ export default function Cart() {
     return btoa(String.fromCharCode.apply(null, bytes));
   }
 
+  function Conversiondate(isoDate){
+    return moment(isoDate).format('MMMM Do YYYY, h:mm:ss a');
+  }
+
   return (
     <>
       <div className="flex justify-center align-middle my-auto mt-3">
@@ -388,7 +390,7 @@ export default function Cart() {
                     {item.Title}
                   </th>
                   <td className="px-6 py-4 text-[16px]">{item.description}</td>
-                  <td className="px-6 py-4 text-[16px]">{item.Date}</td>
+                  <td className="px-6 py-4 text-[16px]">{Conversiondate(item.Date)}</td>
                   <td className="px-4 py-2 text-[16px]">
                     <button
                       onClick={() => ShowDetailData(item._id)}
@@ -580,7 +582,7 @@ const ProductCard = ({ item, convertToBase64 }) => {
     return (
         <div>
             <h2>{item.name}</h2>
-            {imageSrc ? <img src={imageSrc} className="w-20 h-20" alt={item.name} /> : <p>Loading image...</p>}
+            {imageSrc ? <img src={imageSrc} className="w-28 h-28 p-1" alt={item.name} /> : <p>Loading image...</p>}
         </div>
     );
 };

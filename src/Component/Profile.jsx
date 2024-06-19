@@ -330,7 +330,7 @@ export default function Profile() {
                   </div>
                   <div className="flex justify-center m-auto flex-row">
                     <span className="flex justify-center m-auto flex-col">
-                      <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                      <label className="text-gray-800  dark:text-white text-[18px] text-left ml-3 mt-5">
                         Enter Your Name
                       </label>
                       <input
@@ -346,7 +346,7 @@ export default function Profile() {
                     </span>
 
                     <span className="flex justify-center m-auto flex-col">
-                      <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                      <label className="text-gray-800  dark:text-white text-[18px] text-left ml-3 mt-5">
                         Enter Your Email
                       </label>
                       <input
@@ -361,7 +361,7 @@ export default function Profile() {
                   </div>
                   <div className="flex justify-center m-auto flex-row">
                     <span className="flex justify-center m-auto flex-col">
-                      <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                      <label className="text-gray-800  dark:text-white text-[18px] text-left ml-3 mt-5">
                         Enter Your Country Name
                       </label>
                       <input

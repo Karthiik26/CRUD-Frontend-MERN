@@ -77,22 +77,22 @@ function Login() {
     <>
       <div className="flex justify-center mx-32 p-0 rounded">
         <div className="text-center py-3">
-          <span className="text-[42px] font-serif text-black px- mb-0">
+          <span className="text-[42px] dark:text-white font-serif text-black px- mb-0">
             Login
           </span>
-          <div className="px-3 text-[22px] text-pink-600 mt-0 font-medium">
+          <div className="px-3 dark:text-yellow-300 text-[22px] text-pink-600 mt-0 font-medium">
             Login To Explore More
           </div>
 
           <form onSubmit={LoggedIn}>
             <div className="flex justify-center m-2">
               <img
-                className="w-1/3 h-4/6"
+                className="w-1/3 h-4/6 dark:text-black"
                 src={img}
                 alt="img not found"
               />
               <div className="flex justify-center m-2 flex-col">
-                <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                   Enter Your Email
                 </label>
                 <input
@@ -100,11 +100,11 @@ function Login() {
                   name="Email"
                   id="Email"
                   value={Email}
-                  className="p-4 m-4 border border-b-black text-[18px] rounded w-80"
+                  className="p-4 m-4 border font-medium dark:text-black border-b-black text-[18px] rounded w-80"
                   onChange={(e) => setEmail(e.target.value)}
                 />
 
-                <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                   Enter Your Password
                 </label>
                 <input
@@ -112,7 +112,7 @@ function Login() {
                   name="Password"
                   id="Password"
                   value={Password}
-                  className="p-4 m-4 border border-b-black text-[18px] rounded w-80"
+                  className="p-4 m-4 border dark:text-black font-medium border-b-black text-[18px] rounded w-80"
                   onChange={(e) => {
                     setPassword(e.target.value);
                   }}

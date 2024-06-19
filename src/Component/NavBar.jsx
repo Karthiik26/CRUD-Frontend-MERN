@@ -2,6 +2,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import "../App.css";
+import Togglebtn from "./Togglebtn";
 
 export default function NavBar() {
   const [Nav, setNav] = useState();
@@ -19,11 +20,22 @@ export default function NavBar() {
     }
   }, []);
 
+  const [Dark, setDark] = useState();
+
+  function ToggleDarkmode() {
+    const x = localStorage.getItem("darkMode");
+    setDark(x);
+    if (Dark === "true") {
+    }
+    console.log("--------" + Dark);
+  }
+
   function LogOut() {
     localStorage.clear("Login");
     window.location.reload();
     nav("/Login");
   }
+
   return (
     <>
       {Nav ? (
@@ -32,22 +44,40 @@ export default function NavBar() {
             <h5 className="px-6 m-1 text-[16px] font-medium">Karthik Nagula</h5>
           </div> */}
           <div className="flex justify-between">
-            <div className="mx-4 py-2 my-1 text-[24px] font-bold">WEB OPERATIONS</div>
+            <div className="mx-4 py-4 my-1 text-[24px] font-bold">
+              WEB OPERATIONS
+            </div>
             <div className="py-4 mx-2">
-              <NavLink className="px-4 py-2 text-[18px] home" to={"/"}>
+              <span className="px-4 py-2" onClick={() => ToggleDarkmode()}>
+                <Togglebtn />
+              </span>
+              <NavLink
+                className="px-4 py-2 font-semibold text-[18px] home"
+                to={"/"}
+              >
                 Home
               </NavLink>
-              <NavLink className="px-4 py-2 text-[18px] home" to={"/Create"}>
+              <NavLink
+                className="px-4 py-2 font-semibold text-[18px] home"
+                to={"/Create"}
+              >
                 Create
               </NavLink>
-              <NavLink className="px-4 py-2 text-[18px] home" to={"/Cart"}>
+              <NavLink
+                className="px-4 py-2 font-semibold text-[18px] home"
+                to={"/Cart"}
+              >
                 Cart
               </NavLink>
-              <NavLink className="px-4 py-2 text-[18px] home" to={"/Profile"}>
+              <NavLink
+                className="px-4 py-2 font-semibold text-[18px] home"
+                to={"/Profile"}
+              >
                 Profile
               </NavLink>
+
               <NavLink
-                className="px-4 py-2 mx-2 text-[18px] border-none text-black font-serif font-medium logout"
+                className="px-4 py-3 mx-2 text-[18px] border-none text-red-700 font-serif bg-orange-100 rounded  font-medium logout"
                 onClick={LogOut}
               >
                 LogOut
@@ -56,7 +86,7 @@ export default function NavBar() {
           </div>
         </div>
       ) : (
-        <div className="flex justify-between m-auto bg-white my-0">
+        <div className="flex justify-between m-auto bg-white my-0 dark:bg-gray-500 dark:text-white " >
           <div className="py-4 mx-2 flex justify-end">
             <NavLink
               className="px-4 py-2 text-[18px] rounded-full border-2 border-black m-4 nav1"
@@ -71,10 +101,10 @@ export default function NavBar() {
               SignUp
             </NavLink>
           </div>
-          <div className="p-5 m-3">
-            {/* <NavLink className="px-4 py-2 text-[18px] home" >
-              Toggle
-            </NavLink> */}
+          <div className="px-6 py-2 my-5">
+            <span className="px-4 py-2" onClick={() => ToggleDarkmode()}>
+              <Togglebtn />
+            </span>
           </div>
         </div>
       )}

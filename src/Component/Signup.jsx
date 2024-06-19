@@ -116,13 +116,13 @@ function Signup() {
 
   return (
     <>
-      <div className="flex justify-center mx-48 mt-5 px-4 py-0 border-2 w-50 rounded">
+      <div className="flex justify-center mx-48 mt-5 px-4 py-0 border-2 w-50 rounded-2xl">
         <div className="text-center">
           <div className="text-center">
-            <div className="text-[32px] font-serif font-extrabold m-0 pt-2">
+            <div className="text-[32px] font-serif font-extrabold m-0 pt-4">
               Signup
             </div>
-            <div className="text-[20px] font-medium text-blue-600 font-sans m-0">
+            <div className="text-[20px] dark:text-green-300 font-medium text-blue-600 font-sans m-0">
               Signup to explore more
             </div>
           </div>
@@ -137,7 +137,7 @@ function Signup() {
                       name="UserImage"
                       id="file"
                       onChange={handleImageChange}
-                      className="p-4 m-4 border border-b-black text-[18px] rounded w-80"
+                      className="p-4 m-4 border border-b-black text-[18px] rounded w-80 font-medium"
                     />
                   </span>
                   {selectedImage && (
@@ -146,8 +146,8 @@ function Signup() {
                         <div className="img-preview-profile w-28 h-28 rounded-full border-4">
                           <img
                             src={selectedImage}
-                            className="w-28 h-30"
-                            alt=""
+                            className="w-28 h-30 dark:text-blackfont-medium"
+                            alt="" 
                           />
                         </div>
                         <div className="mt-12 ml-5">
@@ -165,28 +165,28 @@ function Signup() {
                 </div>
                 <div className="flex justify-center m-auto flex-row">
                   <span className="flex justify-center m-auto flex-col">
-                    <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                    <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                       Enter Your Name
                     </label>
                     <input
                       type="text"
                       name="Name"
                       id="Name"
-                      className="p-2 m-3 border border-b-black text-[18px] rounded w-80"
+                      className="p-2 m-3 border font-medium dark:text-black border-b-black text-[18px] rounded w-80"
                       value={Name}
                       onChange={(e) => setName(e.target.value)}
                     />
                   </span>
 
                   <span className="flex justify-center m-auto flex-col">
-                    <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                    <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                       Enter Your Email
                     </label>
                     <input
                       type="email"
                       name="Email"
                       id="Email"
-                      className="p-2 m-3 border border-b-black text-[18px] rounded w-80"
+                      className="p-2 m-3 border dark:text-black font-medium border-b-black text-[18px] rounded w-80"
                       value={Email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -194,28 +194,28 @@ function Signup() {
                 </div>
                 <div className="flex justify-center m-auto flex-row">
                   <span className="flex justify-center m-auto flex-col">
-                    <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                    <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                       Enter Your Country Name
                     </label>
                     <input
                       type="text"
                       name="Country"
                       id="country"
-                      className="p-2 m-3 border border-b-black text-[18px] rounded w-80"
+                      className="p-2 m-3 border dark:text-black font-medium border-b-black text-[18px] rounded w-80"
                       value={Country}
                       onChange={(e) => setCountry(e.target.value)}
                     />
                   </span>
 
                   <span className="flex justify-center m-auto flex-col">
-                    <label className="text-gray-800 text-[18px] text-left ml-3 mt-5">
+                    <label className="text-gray-800 dark:text-white text-[18px] text-left ml-3 mt-5">
                       Enter Your Password
                     </label>
                     <input
                       type="password"
                       name="Password"
                       id="password"
-                      className="p-2 m-3 border border-b-black text-[18px] rounded w-80"
+                      className="p-2 m-3 border dark:text-black font-medium border-b-black text-[18px] rounded w-80"
                       value={Password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
